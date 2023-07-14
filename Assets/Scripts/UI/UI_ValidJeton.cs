@@ -24,6 +24,7 @@ public class UI_ValidJeton : MonoBehaviour
         button.onClick.RemoveAllListeners();
     }
     
+    //Temporaly copie jeton to show it for the game master
     public void CopieJeton(UI_Jeton _jetonToCopie, string _validWord)
     {
         Transform buttonTransform = button.transform;
@@ -34,6 +35,7 @@ public class UI_ValidJeton : MonoBehaviour
         validJetonCopy.gameObject.SetActive(true);
         validJetonCopy.UnactivateButton();
     }
+    //Destroy the copied jeton
     public void ResetValidJeton()
     {
         validJetonWord.text = "";
